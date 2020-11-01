@@ -65,7 +65,7 @@ function calcWage(e) {
         } else {
             extraHoursSpent = extraTime(hoursWorked, contractTime)
             contractTimeAmount = hoursWorked * payPerHour;
-            extraTimeAmount = extraHoursSpent + tip;
+            extraTimeAmount = extraHoursSpent * tip;
             
             // Calculating amount
             result = totalExtraTimePay(contractTimeAmount, extraTimeAmount);
